@@ -85,6 +85,18 @@
   border: none !important;
 }
 
+.header__burger {
+  display: none;
+  background-image: url(../../images/icons/nav-tab-btn.svg);
+  background-color: transparent;
+  background-position: center;
+  border: none;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin: auto auto auto 0;
+}
+
 @media screen and (max-width: 1024px) {
   .header__nav-links-container {
     gap: 10px;
@@ -93,5 +105,14 @@
 
   .header {
     max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__nav-link {
+    display: none;
+  }
+  .header__burger {
+    display: block;
   }
 }

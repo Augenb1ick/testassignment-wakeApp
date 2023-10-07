@@ -50,9 +50,22 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: start;
 }
 
 .footer__social-media-icon {
   max-width: 16px;
   max-height: 16px;
+}
+
+@media screen and (max-width: 530px) {
+  .footer__doc-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer__doc-link {
+    font-size: 10px;
+  }
 }
