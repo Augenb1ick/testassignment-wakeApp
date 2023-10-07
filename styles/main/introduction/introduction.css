@@ -1,0 +1,183 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 640px;
+  text-align: center;
+  margin-top: 54px;
+}
+
+.introduction__subtitle {
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  max-width: 389px;
+  margin: 6px 0 24px 0;
+}
+
+.introduction__action-buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.introduction__action-button {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  width: 160px;
+  height: 44px;
+}
+
+.introduction__reg-container {
+  margin: 54px 0 59px 0;
+  padding: 18px 16px;
+  border-radius: 16px;
+  border: 1px solid #3a4054;
+  background: linear-gradient(
+    268deg,
+    rgba(79, 89, 124, 0.4) 0%,
+    rgba(123, 135, 175, 0.4) 50.52%,
+    rgba(63, 72, 105, 0.4) 100%
+  );
+  backdrop-filter: blur(5px);
+}
+
+.introduction__reg-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.introduction__reg-heading-title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: auto auto auto 0;
+}
+
+.introduction__reg-heading-advantages-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.introduction__reg-heading-advantages-img {
+  width: 36px;
+  height: 36px;
+  margin: auto;
+}
+
+.introduction__reg-heading-advantages-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  max-width: 76px;
+  margin: auto;
+}
+
+.introduction__reg-form {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  gap: 16px;
+}
+
+.introduction__reg-form-input {
+  width: 188px;
+  height: 44px;
+  border-radius: 8px;
+  background: #fff;
+  padding-left: 14px;
+  color: #050d2a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.introduction__reg-form-sbmt-btm {
+  width: 160px;
+  height: 44px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.introduction__privacy-policy {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.introduction__privacy-policy-checkbox {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.introduction__privacy-policy-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+  .introduction__reg-heading {
+    flex-direction: column;
+  }
+  .introduction__reg-form {
+    flex-direction: column;
+  }
+
+  .introduction__reg-heading-advantages-container {
+    width: 100%;
+  }
+
+  .introduction__reg-heading-advantages-img {
+    margin: 0;
+  }
+
+  .introduction__reg-heading-advantages-text {
+    margin: 0;
+  }
+
+  .introduction__reg-form-input {
+    width: auto;
+  }
+  .introduction__title {
+    font-size: 34px;
+  }
+  .introduction__subtitle {
+    font-size: 20px;
+  }
+}

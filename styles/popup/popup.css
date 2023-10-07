@@ -1,0 +1,107 @@
+.popup-reg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  visibility: hidden;
+  opacity: 1;
+  z-index: 5;
+}
+
+.popup-container {
+  width: 350px;
+  border: 1px solid #3a4054;
+  background: linear-gradient(
+    268deg,
+    rgba(79, 89, 124, 0.4) 0%,
+    rgba(123, 135, 175, 0.4) 50.52%,
+    rgba(63, 72, 105, 0.4) 100%
+  );
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  padding: 20px;
+}
+
+.popup-heading {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.popup-input {
+  width: 120%;
+  height: 44px;
+  border-radius: 8px;
+  background: #fff;
+  padding-left: 14px;
+  color: #050d2a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.checkbox-container {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 125%;
+}
+
+.popup-checkbox {
+  border-radius: 2px;
+}
+
+.popup-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.popup-button {
+  width: 30%;
+  height: 36px;
+  border-radius: 8px;
+  color: #fff;
+  margin-left: auto;
+}
+
+.popup-close-btn {
+  width: 20px;
+  height: 20px;
+  background: url(../../images/icons/Close-Icon.svg) center no-repeat;
+  border: none;
+  position: absolute;
+  top: -36px;
+  right: -36px;
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 0.4s ease;
+}

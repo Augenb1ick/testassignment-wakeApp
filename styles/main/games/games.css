@@ -1,0 +1,222 @@
+.games {
+  display: flex;
+  flex-direction: column;
+  max-width: 73%;
+  margin: 0 auto;
+}
+
+.games__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.games__text-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.games__heading-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-right: auto;
+}
+
+.games__heading-subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.games__heading-link {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-top: auto;
+}
+
+.games__game-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  cursor: pointer;
+  margin: 24px auto 0 0;
+}
+
+.small-games-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  max-height: 326px;
+}
+
+.small-game {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-game__img {
+  width: 160px;
+  height: 120px;
+  margin-bottom: 6px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.small-game__title {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.small-game:hover .small-game__title {
+  color: #4870ff;
+}
+
+.small-game__subtitle {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.large-games-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.large-game:nth-child(3) {
+  grid-column: span 2;
+}
+
+.large-game__container {
+  background-image: url(../../../images/games/DynamiteRichesMW_BigWin_385x190.jpeg);
+  background-position: 48%;
+  background-size: cover;
+  max-width: 224px;
+  max-height: 128px;
+  padding: 16px 12px;
+  border-radius: 16px;
+}
+
+.large-game__title {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 132px;
+}
+
+.large-game:hover .large-game__title {
+  color: #4870ff;
+}
+
+.large-game:nth-child(3) .large-game__title {
+  max-width: fit-content;
+}
+
+.large-game:nth-child(3) .large-game__subtitle {
+  max-width: fit-content;
+  font-size: 12px;
+  font-weight: 300;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.large-game__subtitle {
+  margin: 5px 0 16px 0;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 162px;
+}
+
+.large-game__img {
+  width: 512px;
+  height: 120px;
+  border-radius: 16px;
+}
+
+.large-game__btn {
+  width: 68px;
+  height: 22px;
+  border-radius: 12px;
+  background: #4870ff;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.large-game:nth-child(3) .large-game__btn {
+  width: 81px;
+}
+
+.games__asterisk-text {
+  color: #fff;
+  max-width: 655px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 24px;
+}
+
+.large-game__info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 1400px) {
+  .games__game-list {
+    grid-template-columns: 1fr;
+  }
+  .small-games-list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 26px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .games__game-list {
+    grid-template-columns: 1fr;
+  }
+  .small-games-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 26px;
+  }
+  .large-game__img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .games__heading-title {
+    font-size: 26px;
+  }
+
+  .games__heading-subtitle {
+    font-size: 8px;
+  }
+}

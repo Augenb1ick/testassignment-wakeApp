@@ -1,0 +1,43 @@
+@import url(../vendor/normalize.css);
+@import url(../styles/header/header.css);
+@import url(../styles/main/main.css);
+@import url(../styles/main/introduction/introduction.css);
+@import url(../styles/main/games/games.css);
+@import url(../styles/main/contact/contact.css);
+@import url(../styles/footer/footer.css);
+@import url(../styles/popup/popup.css);
+@import url(../styles/preloader/preloader.css);
+
+@import url(../fonts/Proxima-Nova/Proxima_nova.css);
+
+body {
+  background-color: hwb(240 0% 85%);
+  font-family: 'Proxima Nova', sans-serif;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+input {
+  border: none;
+}

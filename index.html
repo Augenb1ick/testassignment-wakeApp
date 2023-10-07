@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="./pages/index.js"></script>
+    <title>WakeApp</title>
+  </head>
+  <body class="loaded">
+    <div class="preloader">
+    <div class="spinner"></div>
+    </div>
+    <div class="root">
+      <header class="header">
+        <img class="header__logo-img" src="./images/logo.svg" alt="" />
+        <nav class="header__nav-links-container">
+          <a class="header__nav-link" href="#">Games</a>
+          <a class="header__nav-link" href="#">Contact Us</a>
+          <a class="header__nav-link" href="#">Terms of Use</a>
+          <a class="header__nav-link" href="#">About</a>
+        </nav>
+        <nav class="header__auth-buttons-container">
+          <button type="button" id="sign-up" class="header__auth-button">Sign up</button>
+          <button type="button" class="header__auth-button action-button">Log in</button>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <main class="main">
+            <section class="introduction">
+                <h1 class="introduction__title">awesome html5 games - no money!</h1>
+                <h2 class="introduction__subtitle">Your perfect place to get some fun and excitement</h2>
+                <div class="introduction__action-buttons-container">
+                    <button class="introduction__action-button">Log in</button>
+                    <button class="introduction__action-button action-button">Play</button>
+                </div>
+                <div class="introduction__reg-container">
+                    <div class="introduction__reg-heading">
+                        <h3 class="introduction__reg-heading-title">Create a free account now</h3>
+                        <div class="introduction__reg-heading-advantages-container">
+                            <img class="introduction__reg-heading-advantages-img" src="./images/icons/dice.png" alt="">
+                            <p class="introduction__reg-heading-advantages-text">1000+ Games available</p>
+                        </div>
+                        <div class="introduction__reg-heading-advantages-container">
+                            <img class="introduction__reg-heading-advantages-img" src="./images/icons/slot.png" alt="">
+                            <p class="introduction__reg-heading-advantages-text">New game Every week</p>
+                        </div>
+                        <div class="introduction__reg-heading-advantages-container">
+                            <img class="introduction__reg-heading-advantages-img" src="./images/icons/24h.png" alt="">
+                            <p class="introduction__reg-heading-advantages-text">Support our users 24/7</p>
+                        </div>
+                    </div>
+                    <form class="introduction__reg-form" action="submit">
+                        <input class="introduction__reg-form-input" type="text" name="firstname" id="firstname" placeholder="Firstname">
+                        <input class="introduction__reg-form-input" type="text" name="lastname" id="lastname" placeholder="Lastname">
+                        <input class="introduction__reg-form-input" type="email" name="email" id="email" placeholder="Email Address">
+                        <button class="introduction__reg-form-sbmt-btm action-button" type="submit"> Join Now</button>
+                    </form>
+                    <div class="introduction__privacy-policy">
+                        <input class="introduction__privacy-policy-checkbox" type="checkbox">
+                        <p class="introduction__privacy-policy-text">I Accept The Privacy Policy</p>
+                    </div>
+                </input>
+                </div>
+            </section>
+            <section class="games">
+                <div class="games__heading">
+                    <div class="games__text-container">
+                        <h2 class="games__heading-title">Our Games</h2>
+                        <h3 class="games__heading-subtitle">Get Virtual Welcome bonus after Sign Up</h2>
+                    </div>
+                    <a class="games__heading-link" href="#">All games</a>
+                </div>
+                <div class="games__game-list">
+                    <div class="small-games-list">
+                        <div class="small-game">
+                            <img class="small-game__img" src="./images/games/gametype.2813.jpg" alt="">
+                            <p class="small-game__title">Double Jackpot</p>
+                            <p class="small-game__subtitle">NetentGames</p>
+                        </div>
+                        <div class="small-game">
+                            <img class="small-game__img" src="./images/games/gametype.4298.jpg" alt="">
+                            <p class="small-game__title">All Aboard: Dynam...</p>
+                            <p class="small-game__subtitle">RushGameStudio</p>
+                        </div>
+                        <div class="small-game">
+                            <img class="small-game__img" src="./images/games/gametype.4749.jpg" alt="">
+                            <p class="small-game__title">Book Of Tombs</p>
+                            <p class="small-game__subtitle">NetentGames</p>
+                        </div>
+                        <div class="small-game">
+                            <img class="small-game__img" src="./images/games/gametype.4779.jpg" alt="">
+                            <p class="small-game__title">Rudolph’s Ride</p>
+                            <p class="small-game__subtitle">NetentGames</p>
+                        </div>
+                        <div class="small-game">
+                            <img class="small-game__img" src="./images/games/gametype.5423.jpg" alt="">
+                            <p class="small-game__title">Starburst XXXtreme</p>
+                            <p class="small-game__subtitle">StarBurst Inc.</p>
+                        </div>
+                        <div class="small-game">
+                            <img class="small-game__img" src="./images/games/gametype.1882.jpg" alt="">
+                            <p class="small-game__title">Black Diamond</p>
+                            <p class="small-game__subtitle">RushGameStudio</p>
+                        </div>
+                    </div>
+                    <div class="large-games-list">
+                        <div class="large-game">
+                            <div class="large-game__container">
+                                <p class="large-game__title">Dynamite Riches Megaways</p>
+                                <p class="large-game__subtitle">Miners revealed a gain of €46,672 for Sandra M.! You too, dynamite the reels of the Red Tiger Daily Jackpot machines</p>
+                                <button class="large-game__btn">Play now</button>
+                            </div>
+                        </div>
+                        <div class="large-game">
+                            <div class="large-game__container">
+                                <p class="large-game__title">Gator Gold Deluxe Gigablox</p>
+                                <p class="large-game__subtitle">These swamps conceal many dangers but especially precious treasures. Will you be able to find them?</p>
+                                <button class="large-game__btn">Play now</button>
+                            </div>
+                        </div>
+                        <div class="large-game">
+                            <img class="large-game__img" src="./images/banner_promo.jpeg" alt="">
+                            <div class="large-game__info-container">
+                                <div class="large-game__text-container">
+                                    <p class="large-game__title">Our deals are not to be missed</p>
+                                    <p class="large-game__subtitle">Discover a wide range of weekly promotions</p>
+                                </div>
+                                <button class="large-game__btn">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="games__asterisk-text">* We don't offer opportunities to play for real money. Our games are free demo. All games were invented for entertainment purposes only and do not offer real money prizes.</p>
+            </section>
+            <section class="contact">
+                <div class="contact__container">
+                    <h2 class="contact__title">Contact us</h2>
+                    <p class="contact__subtitle">If you have some questions, send us a message</p>
+                    <form class="contact__form" action="submit">
+                        <input class="contact__form-input" type="text" name="firstname" id="firstname" placeholder="Firstname">
+                        <input class="contact__form-input" type="text" name="lastname" id="lastname" placeholder="Lastname">
+                        <textarea class="contact__form-input" type="text" name="additional-text" id="additional-text" placeholder="Your message here..."></textarea>
+                        <div class="contact__form-checkbox-container">
+                            <input class="contact__form-checkbox" type="checkbox">
+                            <p class="contact__form-checkbox-text">I accept the Privacy Policy</p>
+                            <button type="submit" class="contact__form-sbmt-btn action-button">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <img class="contact__img" src="./images/image.png" alt="">
+            </section>
+        </main>
+        <div class="wrapper__filler"></div>
+    </div>
+      <footer class="footer">
+        <nav class="footer__doc-links">
+            <a class="footer__doc-link" href="#">Disclaimer</a>
+            <a class="footer__doc-link" href="#">Privacy Policy</a>
+            <a class="footer__doc-link" href="#">Terms of Conditions</a>
+        </nav>
+        <p class="footer__text">This site does not provide any form of online gambling and delivers information for entertainment and research purposes only. The games listed by Topwinningslots are intended for adult audience entertainment (underage visitors are restricted) and do not offer real money or prizes. Practicing online free games does not imply future success at 'real money' gambling.</p>
+        <div class="footer__cr-and-sm-links">
+            <p class="footer__copyright">2022 | © Lorem Inc. All Rights Reserved</p>
+            <a class="footer__social-media-link" href="#">
+                <img class="footer__social-media-icon" src="./images/icons/x-icon.svg" alt="">
+            </a>
+            <a class="footer__social-media-link" href="#">
+                <img class="footer__social-media-icon" src="./images/icons/fb-icon.svg" alt="">
+            </a>
+            <a class="footer__social-media-link" href="#">
+                <img class="footer__social-media-icon" src="./images/icons/inst-icon.svg" alt="">
+            </a>
+        </div>
+      </footer>
+    </div>
+    <div id="popup" class="popup-reg">
+        <div class="popup-container">
+            <p class="popup-heading">Create a free account now</p>
+            <form class="popup-form" action="submit">
+                <input class="popup-input" type="text" name="firstname" id="firstname" placeholder="Firstname">
+                <input class="popup-input" type="text" name="lastname" id="lastname" placeholder="Lastname">
+                <input class="popup-input" type="email" name="email" id="email" placeholder="Email">
+                <div class="checkbox-container">
+                    <input class="popup-checkbox" type="checkbox">
+                    <p class="popup-text" >I accept the Privacy Policy</p>
+                    <button class="popup-button action-button">Join Now</button>
+                </div>
+            </form>
+            <button id="close-popup" class="popup-close-btn"></button>
+        </div>
+        
+    </div>
+  </body>
+</html>
