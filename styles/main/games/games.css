@@ -110,6 +110,12 @@
   max-height: 128px;
   padding: 16px 12px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.large-games-list .large-game:nth-child(2) .large-game__container {
+  background-image: url(../../../images/games/GOTM_GatorGold_385x190.jpeg);
 }
 
 .large-game__title {
@@ -119,6 +125,7 @@
   font-weight: 700;
   line-height: normal;
   max-width: 132px;
+  text-align: start;
 }
 
 .large-game:hover .large-game__title {
@@ -144,6 +151,7 @@
   font-weight: 400;
   line-height: normal;
   max-width: 162px;
+  text-align: start;
 }
 
 .large-game__img {
